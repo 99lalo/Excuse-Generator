@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Excuse Generatos</title>
+    </head>
+    <body>
+            <h1 id="excuse">My dog ate my homework</h1>
+        <script>
+        let who = ['The dog','My grandma','His turtle','My bird'];
+        let action = ['ate','peed','crushed','broke'];
+        let what = ['my homework', 'the keys', 'the car'];
+        let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
+        function randomGenerator(){
+            var i = Math.floor(Math.random() * 4);
+            var a = Math.floor(Math.random() * 4);
+            var j = Math.floor(Math.random() * 3);
+            var k = Math.floor(Math.random() * 5);
+            return who[i] + " " + action[a]  + " "+ what [j] + " " + when[k];           
+        }
+            document.getElementById("excuse").innerHTML = randomGenerator();
+        </script>
+    </body>
+</html>
